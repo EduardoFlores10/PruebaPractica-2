@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Taller</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <script src="js/productos.js"></script>
+</head>
+<body>
+<div>
+    <form action="productos.js">
+        <table class="primaria">
+            <tr> 
+                <th>Seleccionar</th>     
+                <th>Combos</th>    
+                <th>Precios</th> 
+                <th>Cantidad</th>      
+            </tr>     
+            <tr>     
+                <td><input type="checkbox" name="cb-supcomb" value="Super combo $7.25" id="supercombo" class="todo"></td>   
+                <td>Super Combo contiene (tres piezas de pollo, ensalada, papas fritas y bebida grande de su elección)</td>
+                <td>$7.25</td>  
+                <td><input id="number1" type="number" value="" min="0" max="1000"></td>      
+            </tr>    
+            <tr>
+                <td><input type="checkbox" name="cb-combper" value="Combo personal $5.75" id="combopersonal" class="todo"></td>  
+                <td>Combo Personal contiene (dos piezas de pollo, papa frita y bebida mediana)</td>
+                <td>$5.75</td>  
+                <td><input id="number2" type="number" value="" min="0" max="1000"></td>    
+            </tr> 
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Combo Infantil $3.50" id="comboinfantil" class="todo"></td>  
+                <td>Combo Infantil contiene (1 pieza de pollo, papas fritas y una bebida pequeña)</td>
+                <td>$3.50</td>  
+                <td><input id="number3" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+          
+          </table>
+    </form>
+    <br>
+    <form action="productos.js">
+        <table class="secundaria">
+            <tr> 
+                <th>Seleccionar</th>     
+                <th>Combos</th>
+                <th>Precios</th>       
+                <th>Cantidad</th>      
+            </tr>     
+            <tr>     
+                <td><input type="checkbox" name="cb-supcomb" value="Ensalada $1.50" id="de1"></td>   
+                <td>Ensalada</td> 
+                <td>$1.50</td>  
+                <td><input id="number4" type="number" value="" min="0" max="1000"></td>      
+            </tr>    
+            <tr>
+                <td><input type="checkbox" name="cb-combper" value="Papa frita $1.25" id="de2"></td>  
+                <td>Papa Frita</td>
+                <td>$1.25</td> 
+                <td><input id="number5" type="number" value="" min="0" max="1000"></td>    
+            </tr> 
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Pieza de pollo grande $1.75" id="de3"></td>  
+                <td>Pieza de pollo grande</td>
+                <td>$1.75</td> 
+                <td><input id="number6" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Pieza de pollo mediana $1.50" id="de4"></td>  
+                <td>Pieza de pollo mediana</td>
+                <td>$1.50</td> 
+                <td><input id="number7" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="pieza de poño pequeña  $1.25" id="de5"></td>  
+                <td>Pieza de pollo pequeña</td>
+                <td>$1.25</td> 
+                <td><input id="number8" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Bebida grande $1.50" id="de6"></td>  
+                <td>Bebida grande</td>
+                <td>$1.50</td> 
+                <td><input id="number9" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Bebida mediana $1.25" id="de7"></td>  
+                <td>Bebida mediana</td>
+                <td>$1.25</td>
+                <td><input id="number10" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Bebida pequeña $1.00" id="de8"></td>  
+                <td>Bebida pequeña</td>
+                <td>$1.00</td> 
+                <td><input id="number11" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Café $0.50" id="de9"></td>  
+                <td>Café</td>
+                <td>$0.50</td> 
+                <td><input id="number12" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+            <tr>  
+                <td><input type="checkbox" name="cb-combinfa" value="Postre $1.25" id="de10"></td>  
+                <td>Postre</td>
+                <td>$1.25</td> 
+                <td><input id="number13" type="number" value="" min="0" max="1000"></td>    
+            </tr>
+           
+          
+          </table>
+          <!--Función donde guardo los datos y los ocupo en javascript-->
+          <button type="button" onclick="datos()">Enviar</button>
+          <p id="ptotal">Productos seleccionados:  </p>
+    </form>
+</div>
+</body>
+</html>

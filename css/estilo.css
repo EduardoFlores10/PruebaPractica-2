@@ -1,0 +1,74 @@
+html{
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+:root{
+    --gradient:  linear-gradient(to right, #e80033, #f9a852, #f69653, #f38654, #f07654, #ed6856, #ef5956, #ee4c58, #56c1ab);
+  }
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    font-family: sans-serif;
+    color: #222;
+    background: beige;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: fondo-anim 20s infinite alternate;
+  }
+  @keyframes fondo-anim{
+    0%{background-position: left;} /*por defecto*/
+    100%{background-position: right;}
+  }
+table {
+    width: 100%;
+    border: 1px solid #999;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 0 1em 0;
+    caption-side: top;
+    font-family: 'Rock Salt', cursive;
+ }
+ caption, td, th {
+    padding: 0.4em;
+ }
+ th, td {
+    border-bottom: 1px solid #999;
+    width: 25%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 1em;
+    text-align: center;
+ }
+#estone{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    padding-top:4% ;
+}
+#esttwo{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+#padre{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border: white 8px inset;
+}
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #ee4c58;
+    padding: 20px 20px 15px 15px;
+    font-size: 1em;
+    font-family: 'Rock Salt', cursive;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    background-color:#e80033; /* Green */
+    color: white;
+}
+  
